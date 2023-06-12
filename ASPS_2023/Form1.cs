@@ -32,8 +32,8 @@ namespace ASPS_2023
         }
         private void button_add_sportsmen_Click(object sender, EventArgs e)
         {
-            fr2.label_red_name.Text = " ";
-            fr2.label_blue_name.Text = " ";
+            fr2.label_red_name.Text = listBox_red_names.Text;
+            fr2.label_blue_name.Text = listBox_blue_names.Text;
             showForm2();
         }
 
@@ -48,6 +48,31 @@ namespace ASPS_2023
             string[] files = new DirectoryInfo(fullPath).GetFiles("*.txt", SearchOption.AllDirectories)
             .Select(f => f.Name).ToArray();
             this.listBox_files_weigt.Items.AddRange(files);
+        }
+
+        private void listBox_files_weigt_Click(object sender, EventArgs e)
+        {
+            listBox_red_names.Items.Clear();
+            listBox_blue_names.Items.Clear();
+            string fNamne = listBox_files_weigt.Text;
+            if (fNamne != " ")
+            {
+                System.IO.StreamReader sr_red = new System.IO.StreamReader(fNamne);
+
+                while (!sr_red.EndOfStream)
+                {
+                    listBox_red_names.Items.Add(sr_red.ReadLine());
+                }
+                sr_red.Close();
+                System.IO.StreamReader sr_blue = new System.IO.StreamReader(fNamne);
+                while (!sr_blue.EndOfStream)
+                {
+                    listBox_blue_names.Items.Add(sr_blue.ReadLine());
+                }
+                sr_blue.Close();
+                string weit = listBox_files_weigt.Text;
+                fr2.label_weight.Text = "Вес " + weit.Substring((weit.Length - 6), 2) + "кг";
+             }
         }
     }
 }

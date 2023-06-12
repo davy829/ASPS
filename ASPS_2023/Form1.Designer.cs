@@ -76,6 +76,7 @@
             textBox_reset_timer_min = new TextBox();
             button_resore_timer = new Button();
             button_timer_start = new Button();
+            textBox1 = new TextBox();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             panel4.SuspendLayout();
@@ -113,8 +114,9 @@
             listBox_files_weigt.ItemHeight = 15;
             listBox_files_weigt.Location = new Point(412, 12);
             listBox_files_weigt.Name = "listBox_files_weigt";
-            listBox_files_weigt.Size = new Size(123, 259);
+            listBox_files_weigt.Size = new Size(123, 154);
             listBox_files_weigt.TabIndex = 2;
+            listBox_files_weigt.Click += listBox_files_weigt_Click;
             // 
             // button_add_file_weigth
             // 
@@ -594,11 +596,19 @@
             button_timer_start.UseVisualStyleBackColor = true;
             button_timer_start.Click += button_timer_start_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(428, 186);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(77, 23);
+            textBox1.TabIndex = 7;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(544, 539);
+            Controls.Add(textBox1);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(button_add_sportsmen);
@@ -621,6 +631,7 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -672,5 +683,6 @@
         private Label label5;
         private Label label4;
         private Label label3;
+        private TextBox textBox1;
     }
 }

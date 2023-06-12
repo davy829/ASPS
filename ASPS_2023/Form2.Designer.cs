@@ -37,9 +37,9 @@
             label_score_blue = new Label();
             label_blue_name = new Label();
             panel3 = new Panel();
-            label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -82,10 +82,10 @@
             // 
             label_red_name.AutoSize = true;
             label_red_name.BackColor = Color.Transparent;
-            label_red_name.Font = new Font("Arial", 72F, FontStyle.Bold, GraphicsUnit.Point);
+            label_red_name.Font = new Font("Arial", 54.75F, FontStyle.Bold, GraphicsUnit.Point);
             label_red_name.Location = new Point(3, 87);
             label_red_name.Name = "label_red_name";
-            label_red_name.Size = new Size(196, 111);
+            label_red_name.Size = new Size(151, 86);
             label_red_name.TabIndex = 0;
             label_red_name.Text = "red";
             // 
@@ -112,53 +112,53 @@
             // label_blue_name
             // 
             label_blue_name.AutoSize = true;
-            label_blue_name.Font = new Font("Arial", 72F, FontStyle.Bold, GraphicsUnit.Point);
+            label_blue_name.Font = new Font("Arial", 54.75F, FontStyle.Bold, GraphicsUnit.Point);
             label_blue_name.Location = new Point(0, 57);
             label_blue_name.Name = "label_blue_name";
-            label_blue_name.Size = new Size(245, 111);
+            label_blue_name.Size = new Size(188, 86);
             label_blue_name.TabIndex = 0;
             label_blue_name.Text = "blue";
             // 
             // panel3
             // 
-            panel3.BackColor = Color.Transparent;
+            panel3.BackColor = Color.White;
             panel3.Controls.Add(label3);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(label1);
-            panel3.Location = new Point(385, 146);
+            panel3.Location = new Point(385, 157);
             panel3.Name = "panel3";
-            panel3.Size = new Size(286, 189);
+            panel3.Size = new Size(298, 144);
             panel3.TabIndex = 2;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial Narrow", 72F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(3, 47);
-            label1.Name = "label1";
-            label1.Size = new Size(91, 110);
-            label1.TabIndex = 0;
-            label1.Text = "4";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Arial Narrow", 72F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(79, 37);
-            label2.Name = "label2";
-            label2.Size = new Size(69, 110);
-            label2.TabIndex = 1;
-            label2.Text = ":";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Arial Narrow", 72F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(132, 47);
+            label3.Font = new Font("Arial", 84.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(132, 14);
             label3.Name = "label3";
-            label3.Size = new Size(135, 110);
+            label3.Size = new Size(181, 130);
             label3.TabIndex = 2;
             label3.Text = "59";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Arial", 84.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(79, 4);
+            label2.Name = "label2";
+            label2.Size = new Size(93, 130);
+            label2.TabIndex = 1;
+            label2.Text = ":";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial", 84.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(3, 14);
+            label1.Name = "label1";
+            label1.Size = new Size(118, 130);
+            label1.TabIndex = 0;
+            label1.Text = "4";
             // 
             // timer1
             // 
