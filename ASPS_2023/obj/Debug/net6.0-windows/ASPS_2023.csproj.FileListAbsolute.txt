@@ -15,3 +15,4 @@ C:\Users\Andrey\Source\Repos\davy829\ASPS\ASPS_2023\obj\Debug\net6.0-windows\ref
 C:\Users\Andrey\Source\Repos\davy829\ASPS\ASPS_2023\obj\Debug\net6.0-windows\ASPS_2023.pdb
 C:\Users\Andrey\Source\Repos\davy829\ASPS\ASPS_2023\obj\Debug\net6.0-windows\ASPS_2023.genruntimeconfig.cache
 C:\Users\Andrey\Source\Repos\davy829\ASPS\ASPS_2023\obj\Debug\net6.0-windows\ref\ASPS_2023.dll
+C:\Users\Andrey\Source\Repos\davy829\ASPS\ASPS_2023\obj\Debug\net6.0-windows\ASPS_2023.Form2.resources

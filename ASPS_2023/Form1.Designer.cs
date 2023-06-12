@@ -35,29 +35,6 @@
             button_add_file_weigth = new Button();
             button_add_sportsmen = new Button();
             panel1 = new Panel();
-            panel2 = new Panel();
-            button_timer_start = new Button();
-            button_timer_stop = new Button();
-            button_resore_timer = new Button();
-            panel3 = new Panel();
-            textBox_reset_timer_min = new TextBox();
-            textBox_reset_timer_sec = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            panel4 = new Panel();
-            button_red_plus_1 = new Button();
-            button_red_plus_2 = new Button();
-            button_red_plus_3 = new Button();
-            button_red_plus_4 = new Button();
-            button_red_minus_4 = new Button();
-            button_red_minus_3 = new Button();
-            button_red_minus_2 = new Button();
-            button_red_minus_1 = new Button();
-            button_red_advantec = new Button();
-            button_red_winner = new Button();
-            button_red_diqual_1 = new Button();
-            button_red_diqual_2 = new Button();
-            button_red_diqual_3 = new Button();
             panel5 = new Panel();
             button_blue_disqual_3 = new Button();
             button_blue_disqual_2 = new Button();
@@ -72,16 +49,39 @@
             button_blue_plus_3 = new Button();
             button_blue_plus_2 = new Button();
             button_blue_plus_1 = new Button();
+            panel4 = new Panel();
+            button_red_diqual_3 = new Button();
+            button_red_diqual_2 = new Button();
+            button_red_diqual_1 = new Button();
+            button_red_winner = new Button();
+            button_red_advantec = new Button();
+            button_red_minus_4 = new Button();
+            button_red_minus_3 = new Button();
+            button_red_minus_2 = new Button();
+            button_red_minus_1 = new Button();
+            button_red_plus_4 = new Button();
+            button_red_plus_3 = new Button();
+            button_red_plus_2 = new Button();
+            button_red_plus_1 = new Button();
+            panel2 = new Panel();
             panel6 = new Panel();
-            label3 = new Label();
-            label4 = new Label();
             label5 = new Label();
+            label4 = new Label();
+            button_timer_stop = new Button();
+            label3 = new Label();
+            panel3 = new Panel();
+            label2 = new Label();
+            label1 = new Label();
+            textBox_reset_timer_sec = new TextBox();
+            textBox_reset_timer_min = new TextBox();
+            button_resore_timer = new Button();
+            button_timer_start = new Button();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
-            panel3.SuspendLayout();
-            panel4.SuspendLayout();
             panel5.SuspendLayout();
+            panel4.SuspendLayout();
+            panel2.SuspendLayout();
             panel6.SuspendLayout();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // listBox_red_names
@@ -124,6 +124,7 @@
             button_add_file_weigth.TabIndex = 3;
             button_add_file_weigth.Text = "Добавить файлы весов";
             button_add_file_weigth.UseVisualStyleBackColor = true;
+            button_add_file_weigth.Click += button_add_file_weigth_Click;
             // 
             // button_add_sportsmen
             // 
@@ -133,6 +134,7 @@
             button_add_sportsmen.TabIndex = 4;
             button_add_sportsmen.Text = "Добавить спортсменов включить монитор";
             button_add_sportsmen.UseVisualStyleBackColor = true;
+            button_add_sportsmen.Click += button_add_sportsmen_Click;
             // 
             // panel1
             // 
@@ -143,254 +145,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(394, 199);
             panel1.TabIndex = 5;
-            // 
-            // panel2
-            // 
-            panel2.BorderStyle = BorderStyle.Fixed3D;
-            panel2.Controls.Add(panel6);
-            panel2.Controls.Add(panel3);
-            panel2.Controls.Add(button_timer_start);
-            panel2.Location = new Point(412, 334);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(119, 199);
-            panel2.TabIndex = 6;
-            // 
-            // button_timer_start
-            // 
-            button_timer_start.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_timer_start.Location = new Point(3, 3);
-            button_timer_start.Name = "button_timer_start";
-            button_timer_start.Size = new Size(109, 67);
-            button_timer_start.TabIndex = 0;
-            button_timer_start.Text = "FIGHT";
-            button_timer_start.UseVisualStyleBackColor = true;
-            // 
-            // button_timer_stop
-            // 
-            button_timer_stop.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_timer_stop.Location = new Point(52, 1);
-            button_timer_stop.Name = "button_timer_stop";
-            button_timer_stop.Size = new Size(54, 26);
-            button_timer_stop.TabIndex = 1;
-            button_timer_stop.Text = "PAUSE";
-            button_timer_stop.UseVisualStyleBackColor = true;
-            // 
-            // button_resore_timer
-            // 
-            button_resore_timer.Location = new Point(1, 2);
-            button_resore_timer.Name = "button_resore_timer";
-            button_resore_timer.Size = new Size(103, 41);
-            button_resore_timer.TabIndex = 2;
-            button_resore_timer.Text = "Сбросить таймер";
-            button_resore_timer.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Controls.Add(label2);
-            panel3.Controls.Add(label1);
-            panel3.Controls.Add(textBox_reset_timer_sec);
-            panel3.Controls.Add(textBox_reset_timer_min);
-            panel3.Controls.Add(button_resore_timer);
-            panel3.Location = new Point(4, 119);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(108, 74);
-            panel3.TabIndex = 3;
-            // 
-            // textBox_reset_timer_min
-            // 
-            textBox_reset_timer_min.HideSelection = false;
-            textBox_reset_timer_min.Location = new Point(4, 46);
-            textBox_reset_timer_min.Name = "textBox_reset_timer_min";
-            textBox_reset_timer_min.Size = new Size(20, 23);
-            textBox_reset_timer_min.TabIndex = 3;
-            textBox_reset_timer_min.Text = "5";
-            textBox_reset_timer_min.TextAlign = HorizontalAlignment.Center;
-            // 
-            // textBox_reset_timer_sec
-            // 
-            textBox_reset_timer_sec.Location = new Point(52, 46);
-            textBox_reset_timer_sec.Name = "textBox_reset_timer_sec";
-            textBox_reset_timer_sec.Size = new Size(25, 23);
-            textBox_reset_timer_sec.TabIndex = 4;
-            textBox_reset_timer_sec.Text = "32";
-            textBox_reset_timer_sec.TextAlign = HorizontalAlignment.Center;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(25, 57);
-            label1.Name = "label1";
-            label1.Size = new Size(21, 12);
-            label1.TabIndex = 5;
-            label1.Text = "мин";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(79, 57);
-            label2.Name = "label2";
-            label2.Size = new Size(18, 12);
-            label2.TabIndex = 6;
-            label2.Text = "сек";
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Red;
-            panel4.Controls.Add(button_red_diqual_3);
-            panel4.Controls.Add(button_red_diqual_2);
-            panel4.Controls.Add(button_red_diqual_1);
-            panel4.Controls.Add(button_red_winner);
-            panel4.Controls.Add(button_red_advantec);
-            panel4.Controls.Add(button_red_minus_4);
-            panel4.Controls.Add(button_red_minus_3);
-            panel4.Controls.Add(button_red_minus_2);
-            panel4.Controls.Add(button_red_minus_1);
-            panel4.Controls.Add(button_red_plus_4);
-            panel4.Controls.Add(button_red_plus_3);
-            panel4.Controls.Add(button_red_plus_2);
-            panel4.Controls.Add(button_red_plus_1);
-            panel4.Location = new Point(3, 3);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(168, 183);
-            panel4.TabIndex = 0;
-            // 
-            // button_red_plus_1
-            // 
-            button_red_plus_1.FlatStyle = FlatStyle.System;
-            button_red_plus_1.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_red_plus_1.Location = new Point(3, 6);
-            button_red_plus_1.Name = "button_red_plus_1";
-            button_red_plus_1.Size = new Size(34, 29);
-            button_red_plus_1.TabIndex = 1;
-            button_red_plus_1.Text = "+1";
-            button_red_plus_1.UseVisualStyleBackColor = true;
-            // 
-            // button_red_plus_2
-            // 
-            button_red_plus_2.FlatStyle = FlatStyle.System;
-            button_red_plus_2.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_red_plus_2.Location = new Point(43, 6);
-            button_red_plus_2.Name = "button_red_plus_2";
-            button_red_plus_2.Size = new Size(34, 29);
-            button_red_plus_2.TabIndex = 2;
-            button_red_plus_2.Text = "+2";
-            button_red_plus_2.UseVisualStyleBackColor = true;
-            // 
-            // button_red_plus_3
-            // 
-            button_red_plus_3.FlatStyle = FlatStyle.System;
-            button_red_plus_3.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_red_plus_3.Location = new Point(83, 6);
-            button_red_plus_3.Name = "button_red_plus_3";
-            button_red_plus_3.Size = new Size(34, 29);
-            button_red_plus_3.TabIndex = 3;
-            button_red_plus_3.Text = "+3";
-            button_red_plus_3.UseVisualStyleBackColor = true;
-            // 
-            // button_red_plus_4
-            // 
-            button_red_plus_4.FlatStyle = FlatStyle.System;
-            button_red_plus_4.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_red_plus_4.Location = new Point(123, 6);
-            button_red_plus_4.Name = "button_red_plus_4";
-            button_red_plus_4.Size = new Size(34, 29);
-            button_red_plus_4.TabIndex = 4;
-            button_red_plus_4.Text = "+4";
-            button_red_plus_4.UseVisualStyleBackColor = true;
-            // 
-            // button_red_minus_4
-            // 
-            button_red_minus_4.FlatStyle = FlatStyle.System;
-            button_red_minus_4.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_red_minus_4.Location = new Point(123, 38);
-            button_red_minus_4.Name = "button_red_minus_4";
-            button_red_minus_4.Size = new Size(34, 29);
-            button_red_minus_4.TabIndex = 8;
-            button_red_minus_4.Text = "-4";
-            button_red_minus_4.UseVisualStyleBackColor = true;
-            // 
-            // button_red_minus_3
-            // 
-            button_red_minus_3.FlatStyle = FlatStyle.System;
-            button_red_minus_3.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_red_minus_3.Location = new Point(83, 38);
-            button_red_minus_3.Name = "button_red_minus_3";
-            button_red_minus_3.Size = new Size(34, 29);
-            button_red_minus_3.TabIndex = 7;
-            button_red_minus_3.Text = "-3";
-            button_red_minus_3.UseVisualStyleBackColor = true;
-            // 
-            // button_red_minus_2
-            // 
-            button_red_minus_2.FlatStyle = FlatStyle.System;
-            button_red_minus_2.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_red_minus_2.Location = new Point(43, 38);
-            button_red_minus_2.Name = "button_red_minus_2";
-            button_red_minus_2.Size = new Size(34, 29);
-            button_red_minus_2.TabIndex = 6;
-            button_red_minus_2.Text = "-2";
-            button_red_minus_2.UseVisualStyleBackColor = true;
-            // 
-            // button_red_minus_1
-            // 
-            button_red_minus_1.FlatStyle = FlatStyle.System;
-            button_red_minus_1.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_red_minus_1.Location = new Point(3, 38);
-            button_red_minus_1.Name = "button_red_minus_1";
-            button_red_minus_1.Size = new Size(34, 29);
-            button_red_minus_1.TabIndex = 5;
-            button_red_minus_1.Text = "-1";
-            button_red_minus_1.UseVisualStyleBackColor = true;
-            // 
-            // button_red_advantec
-            // 
-            button_red_advantec.Location = new Point(3, 107);
-            button_red_advantec.Name = "button_red_advantec";
-            button_red_advantec.Size = new Size(154, 34);
-            button_red_advantec.TabIndex = 1;
-            button_red_advantec.Text = "Advantec";
-            button_red_advantec.UseVisualStyleBackColor = true;
-            // 
-            // button_red_winner
-            // 
-            button_red_winner.Location = new Point(3, 146);
-            button_red_winner.Name = "button_red_winner";
-            button_red_winner.Size = new Size(154, 34);
-            button_red_winner.TabIndex = 9;
-            button_red_winner.Text = "WINNER";
-            button_red_winner.UseVisualStyleBackColor = true;
-            // 
-            // button_red_diqual_1
-            // 
-            button_red_diqual_1.Location = new Point(3, 73);
-            button_red_diqual_1.Name = "button_red_diqual_1";
-            button_red_diqual_1.Size = new Size(45, 30);
-            button_red_diqual_1.TabIndex = 1;
-            button_red_diqual_1.Text = "DIS1";
-            button_red_diqual_1.UseVisualStyleBackColor = true;
-            // 
-            // button_red_diqual_2
-            // 
-            button_red_diqual_2.Enabled = false;
-            button_red_diqual_2.Location = new Point(58, 73);
-            button_red_diqual_2.Name = "button_red_diqual_2";
-            button_red_diqual_2.Size = new Size(45, 30);
-            button_red_diqual_2.TabIndex = 10;
-            button_red_diqual_2.Text = "DIS2";
-            button_red_diqual_2.UseVisualStyleBackColor = true;
-            // 
-            // button_red_diqual_3
-            // 
-            button_red_diqual_3.Enabled = false;
-            button_red_diqual_3.Location = new Point(112, 73);
-            button_red_diqual_3.Name = "button_red_diqual_3";
-            button_red_diqual_3.Size = new Size(45, 30);
-            button_red_diqual_3.TabIndex = 11;
-            button_red_diqual_3.Text = "DIS3";
-            button_red_diqual_3.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
@@ -548,6 +302,173 @@
             button_blue_plus_1.Text = "+1";
             button_blue_plus_1.UseVisualStyleBackColor = true;
             // 
+            // panel4
+            // 
+            panel4.BackColor = Color.Red;
+            panel4.Controls.Add(button_red_diqual_3);
+            panel4.Controls.Add(button_red_diqual_2);
+            panel4.Controls.Add(button_red_diqual_1);
+            panel4.Controls.Add(button_red_winner);
+            panel4.Controls.Add(button_red_advantec);
+            panel4.Controls.Add(button_red_minus_4);
+            panel4.Controls.Add(button_red_minus_3);
+            panel4.Controls.Add(button_red_minus_2);
+            panel4.Controls.Add(button_red_minus_1);
+            panel4.Controls.Add(button_red_plus_4);
+            panel4.Controls.Add(button_red_plus_3);
+            panel4.Controls.Add(button_red_plus_2);
+            panel4.Controls.Add(button_red_plus_1);
+            panel4.Location = new Point(3, 3);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(168, 183);
+            panel4.TabIndex = 0;
+            // 
+            // button_red_diqual_3
+            // 
+            button_red_diqual_3.Enabled = false;
+            button_red_diqual_3.Location = new Point(112, 73);
+            button_red_diqual_3.Name = "button_red_diqual_3";
+            button_red_diqual_3.Size = new Size(45, 30);
+            button_red_diqual_3.TabIndex = 11;
+            button_red_diqual_3.Text = "DIS3";
+            button_red_diqual_3.UseVisualStyleBackColor = true;
+            // 
+            // button_red_diqual_2
+            // 
+            button_red_diqual_2.Enabled = false;
+            button_red_diqual_2.Location = new Point(58, 73);
+            button_red_diqual_2.Name = "button_red_diqual_2";
+            button_red_diqual_2.Size = new Size(45, 30);
+            button_red_diqual_2.TabIndex = 10;
+            button_red_diqual_2.Text = "DIS2";
+            button_red_diqual_2.UseVisualStyleBackColor = true;
+            // 
+            // button_red_diqual_1
+            // 
+            button_red_diqual_1.Location = new Point(3, 73);
+            button_red_diqual_1.Name = "button_red_diqual_1";
+            button_red_diqual_1.Size = new Size(45, 30);
+            button_red_diqual_1.TabIndex = 1;
+            button_red_diqual_1.Text = "DIS1";
+            button_red_diqual_1.UseVisualStyleBackColor = true;
+            // 
+            // button_red_winner
+            // 
+            button_red_winner.Location = new Point(3, 146);
+            button_red_winner.Name = "button_red_winner";
+            button_red_winner.Size = new Size(154, 34);
+            button_red_winner.TabIndex = 9;
+            button_red_winner.Text = "WINNER";
+            button_red_winner.UseVisualStyleBackColor = true;
+            // 
+            // button_red_advantec
+            // 
+            button_red_advantec.Location = new Point(3, 107);
+            button_red_advantec.Name = "button_red_advantec";
+            button_red_advantec.Size = new Size(154, 34);
+            button_red_advantec.TabIndex = 1;
+            button_red_advantec.Text = "Advantec";
+            button_red_advantec.UseVisualStyleBackColor = true;
+            // 
+            // button_red_minus_4
+            // 
+            button_red_minus_4.FlatStyle = FlatStyle.System;
+            button_red_minus_4.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button_red_minus_4.Location = new Point(123, 38);
+            button_red_minus_4.Name = "button_red_minus_4";
+            button_red_minus_4.Size = new Size(34, 29);
+            button_red_minus_4.TabIndex = 8;
+            button_red_minus_4.Text = "-4";
+            button_red_minus_4.UseVisualStyleBackColor = true;
+            // 
+            // button_red_minus_3
+            // 
+            button_red_minus_3.FlatStyle = FlatStyle.System;
+            button_red_minus_3.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button_red_minus_3.Location = new Point(83, 38);
+            button_red_minus_3.Name = "button_red_minus_3";
+            button_red_minus_3.Size = new Size(34, 29);
+            button_red_minus_3.TabIndex = 7;
+            button_red_minus_3.Text = "-3";
+            button_red_minus_3.UseVisualStyleBackColor = true;
+            // 
+            // button_red_minus_2
+            // 
+            button_red_minus_2.FlatStyle = FlatStyle.System;
+            button_red_minus_2.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button_red_minus_2.Location = new Point(43, 38);
+            button_red_minus_2.Name = "button_red_minus_2";
+            button_red_minus_2.Size = new Size(34, 29);
+            button_red_minus_2.TabIndex = 6;
+            button_red_minus_2.Text = "-2";
+            button_red_minus_2.UseVisualStyleBackColor = true;
+            // 
+            // button_red_minus_1
+            // 
+            button_red_minus_1.FlatStyle = FlatStyle.System;
+            button_red_minus_1.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button_red_minus_1.Location = new Point(3, 38);
+            button_red_minus_1.Name = "button_red_minus_1";
+            button_red_minus_1.Size = new Size(34, 29);
+            button_red_minus_1.TabIndex = 5;
+            button_red_minus_1.Text = "-1";
+            button_red_minus_1.UseVisualStyleBackColor = true;
+            // 
+            // button_red_plus_4
+            // 
+            button_red_plus_4.FlatStyle = FlatStyle.System;
+            button_red_plus_4.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button_red_plus_4.Location = new Point(123, 6);
+            button_red_plus_4.Name = "button_red_plus_4";
+            button_red_plus_4.Size = new Size(34, 29);
+            button_red_plus_4.TabIndex = 4;
+            button_red_plus_4.Text = "+4";
+            button_red_plus_4.UseVisualStyleBackColor = true;
+            // 
+            // button_red_plus_3
+            // 
+            button_red_plus_3.FlatStyle = FlatStyle.System;
+            button_red_plus_3.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button_red_plus_3.Location = new Point(83, 6);
+            button_red_plus_3.Name = "button_red_plus_3";
+            button_red_plus_3.Size = new Size(34, 29);
+            button_red_plus_3.TabIndex = 3;
+            button_red_plus_3.Text = "+3";
+            button_red_plus_3.UseVisualStyleBackColor = true;
+            // 
+            // button_red_plus_2
+            // 
+            button_red_plus_2.FlatStyle = FlatStyle.System;
+            button_red_plus_2.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button_red_plus_2.Location = new Point(43, 6);
+            button_red_plus_2.Name = "button_red_plus_2";
+            button_red_plus_2.Size = new Size(34, 29);
+            button_red_plus_2.TabIndex = 2;
+            button_red_plus_2.Text = "+2";
+            button_red_plus_2.UseVisualStyleBackColor = true;
+            // 
+            // button_red_plus_1
+            // 
+            button_red_plus_1.FlatStyle = FlatStyle.System;
+            button_red_plus_1.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button_red_plus_1.Location = new Point(3, 6);
+            button_red_plus_1.Name = "button_red_plus_1";
+            button_red_plus_1.Size = new Size(34, 29);
+            button_red_plus_1.TabIndex = 1;
+            button_red_plus_1.Text = "+1";
+            button_red_plus_1.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(panel6);
+            panel2.Controls.Add(panel3);
+            panel2.Controls.Add(button_timer_start);
+            panel2.Location = new Point(412, 334);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(119, 199);
+            panel2.TabIndex = 6;
+            // 
             // panel6
             // 
             panel6.BorderStyle = BorderStyle.FixedSingle;
@@ -560,15 +481,16 @@
             panel6.Size = new Size(108, 30);
             panel6.TabIndex = 4;
             // 
-            // label3
+            // label5
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(8, 4);
-            label3.Name = "label3";
-            label3.Size = new Size(15, 17);
-            label3.TabIndex = 0;
-            label3.Text = "5";
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(30, 4);
+            label5.Name = "label5";
+            label5.Size = new Size(22, 17);
+            label5.TabIndex = 2;
+            label5.Text = "60";
+            label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -580,16 +502,97 @@
             label4.TabIndex = 1;
             label4.Text = ":";
             // 
-            // label5
+            // button_timer_stop
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(30, 4);
-            label5.Name = "label5";
-            label5.Size = new Size(22, 17);
-            label5.TabIndex = 2;
-            label5.Text = "60";
-            label5.TextAlign = ContentAlignment.MiddleCenter;
+            button_timer_stop.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button_timer_stop.Location = new Point(52, 1);
+            button_timer_stop.Name = "button_timer_stop";
+            button_timer_stop.Size = new Size(54, 26);
+            button_timer_stop.TabIndex = 1;
+            button_timer_stop.Text = "PAUSE";
+            button_timer_stop.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(8, 4);
+            label3.Name = "label3";
+            label3.Size = new Size(15, 17);
+            label3.TabIndex = 0;
+            label3.Text = "5";
+            // 
+            // panel3
+            // 
+            panel3.BorderStyle = BorderStyle.FixedSingle;
+            panel3.Controls.Add(label2);
+            panel3.Controls.Add(label1);
+            panel3.Controls.Add(textBox_reset_timer_sec);
+            panel3.Controls.Add(textBox_reset_timer_min);
+            panel3.Controls.Add(button_resore_timer);
+            panel3.Location = new Point(4, 119);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(108, 74);
+            panel3.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(79, 57);
+            label2.Name = "label2";
+            label2.Size = new Size(18, 12);
+            label2.TabIndex = 6;
+            label2.Text = "сек";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 6.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(25, 57);
+            label1.Name = "label1";
+            label1.Size = new Size(21, 12);
+            label1.TabIndex = 5;
+            label1.Text = "мин";
+            // 
+            // textBox_reset_timer_sec
+            // 
+            textBox_reset_timer_sec.Location = new Point(52, 46);
+            textBox_reset_timer_sec.Name = "textBox_reset_timer_sec";
+            textBox_reset_timer_sec.Size = new Size(25, 23);
+            textBox_reset_timer_sec.TabIndex = 4;
+            textBox_reset_timer_sec.Text = "32";
+            textBox_reset_timer_sec.TextAlign = HorizontalAlignment.Center;
+            // 
+            // textBox_reset_timer_min
+            // 
+            textBox_reset_timer_min.HideSelection = false;
+            textBox_reset_timer_min.Location = new Point(4, 46);
+            textBox_reset_timer_min.Name = "textBox_reset_timer_min";
+            textBox_reset_timer_min.Size = new Size(20, 23);
+            textBox_reset_timer_min.TabIndex = 3;
+            textBox_reset_timer_min.Text = "5";
+            textBox_reset_timer_min.TextAlign = HorizontalAlignment.Center;
+            // 
+            // button_resore_timer
+            // 
+            button_resore_timer.Location = new Point(1, 2);
+            button_resore_timer.Name = "button_resore_timer";
+            button_resore_timer.Size = new Size(103, 41);
+            button_resore_timer.TabIndex = 2;
+            button_resore_timer.Text = "Сбросить таймер";
+            button_resore_timer.UseVisualStyleBackColor = true;
+            // 
+            // button_timer_start
+            // 
+            button_timer_start.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button_timer_start.Location = new Point(3, 3);
+            button_timer_start.Name = "button_timer_start";
+            button_timer_start.Size = new Size(109, 67);
+            button_timer_start.TabIndex = 0;
+            button_timer_start.Text = "FIGHT";
+            button_timer_start.UseVisualStyleBackColor = true;
+            button_timer_start.Click += button_timer_start_Click;
             // 
             // Form1
             // 
@@ -610,13 +613,13 @@
             Name = "Form1";
             Text = "ASPS_2023 v1.0";
             panel1.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
-            panel4.ResumeLayout(false);
             panel5.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel2.ResumeLayout(false);
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
         }
 
